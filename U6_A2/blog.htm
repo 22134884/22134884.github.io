@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Celtec Games</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="slides.css">
+</head>
+<head>
+    <style>
+        .banner {
+            text-align: center;
+        }
+        .banner img {
+            width: 50%;
+            height: 50%;
+        }
+    </style>
+</head>
+<body>
+    <p class="banner">
+        <img src="images/CeltecGames.png" alt="Celtec Games Logo">
+    </p>
+</body>
+
+<body>
+    <header>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="about.htm">About</a></li>
+            <li><a href="product.htm">Products</a></li>
+	    <li><a href="blog.htm">Blog</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+    </nav>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 2</div>
+  <img src="images/Employee_1.png" style="width:95%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 2</div>
+  <img src="images/Employee_2.png" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+</div>
+
+</body>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<div style="text-align:center">
+<h2>Welcome to the Celtec Games Blog!</h2>
+<p>The Celtec Games Blog holds all sorts of useful information regarding the company and our products.</p>
+<p>Our blog will help you learn a little bit about what we're up to regarding current projects and more!
+<br>Us here at Celtec Games are currently working tirelessly on a new video game to be released on Playstation, 
+<br>Xbox, Nintendo Switch and PC. We incentivise our customer to engage with each other through social media applications
+<br>such as Instagram, Facebook and X (Formerly Twitter)
+

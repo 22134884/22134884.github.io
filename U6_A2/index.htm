@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Celtec</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<head>
+    <style>
+        .banner {
+            text-align: center;
+        }
+        .banner img {
+            width: 50%;
+            height: 50%;
+        }
+    </style>
+</head>
+<body>
+    <p class="banner">
+        <img src="images/CeltecGames.png" alt="Celtec Games Logo">
+    </p>
+</body>
+
+<body>
+    <header>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="about.htm">About</a></li>
+            <li><a href="product.htm">Products</a></li>
+	    <li><a href="blog.htm">Blog</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+	<h2 id="greeting"></h1>
+    </main>
+
+   
+	<p align="right"><img src="images/Developers.png" alt="Celtec Developer"><width=75%></p>
+    <div class="container1">
+    <p>Celtec Games is a small, independant, Welsh games company that develops video games for mobile and desktop platforms. Celtec fuses talent and a burning passion to produce games that can engage and entertain both adults and children. We are stationed in North East Wales, UK and have developed video games for mobile devices (iOS and Android) consoles (Playstation, Xbox and Nintendo Switch) and desktop computers. Here at Celtec we are fuelled by creativity and an ambition to achieve our vision. Everyone at Celtec will tell you that there is a strong sense of belonging here. Together, we have the passion and ambition to create some of the greatest games in the country!</p>
+    </div>
+
+    <script>
+        const currentHour = new Date().getHours();
+        const greeting = document.getElementById('greeting');
+    
+        if (currentHour < 12) {
+            greeting.innerText = "Good morning, welcome to Celtec Games' official website!";
+        } else {
+            greeting.innerText = "Good afternoon, welcome to Celtec Games' official website!";
+        }
+        </script>
+
+</body>
+</html>

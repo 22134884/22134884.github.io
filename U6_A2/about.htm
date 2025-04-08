@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Celtec Games</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="slides.css">
+</head>
+<head>
+    <style>
+        .banner {
+            text-align: center;
+        }
+        .banner img {
+            width: 50%;
+            height: 50%;
+        }
+    </style>
+</head>
+<body>
+    <p class="banner">
+        <img src="images/CeltecGames.png" alt="Celtec Games Logo">
+    </p>
+</body>
+
+<body>
+    <header>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="about.htm">About</a></li>
+            <li><a href="product.htm">Products</a></li>
+	    <li><a href="blog.htm">Blog</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="row">
+      <div class="column">
+	<h2>Where did Celtec originate?</h2>
+	<p>Celtec Games was founded amongst the gorgeous green hills of North East Wales in the United Kingdom. We've insured to imbue every single one of our projects with the fiery passion and love that Welsh people are known for. Ever since our first project as Celtec, we have dreamed of being one of the best games companies in the industry, and aspiring to make incredible games for all to play.</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <p align="right"><img src="images/Wrexham.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/CardiffCastle.png" style="width:95%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/SouthStackLighthouse.png" style="width:93%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+</div>
+
+</body>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+	<h2>What does Celtec Games do?</h2>
+<p>The clues in the name! Here at Celtec Games (or just Celtec), we make videogames that are designed with the sole purpose of entertaining and encapsulating both children and adults into a whole new world that will both entertain and educate them. We make games for mobile devices (iOS or Android), desktop computers, and consoles such as Xbox, Playstation and Nintendo Switch! Every member of our team who helps with the develpment of our games pours their heart and soul into them to ensure that their creativity and vision are realised for your enjoyment
+
+	<h2>Where is Celtec now?</h2>
+<p>Now, Celtec stand as one of the larges videogame developers solely based in Wales, and we have created plenty of unforgettable gaming experiences that are loved by people all around the world.
